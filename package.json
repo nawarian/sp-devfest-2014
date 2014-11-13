@@ -1,0 +1,30 @@
+{
+  "name": "TestsComTodoMVC",
+  "version": "1.0.0",
+  "description": "Testes da aplicação TodoMVC-angular utilizando Protractor (E2E) e Jasmine (unit)",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "karma": "^0.12.24",
+    "protractor": "^1.3.1",
+    "http-server": "^0.6.1",
+    "bower": "^1.3.1"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "test": "./node_modules/karma/bin/karma start ./test/config/karma.conf.js",
+    "test-single-run": "./node_modules/karma/bin/karma  start ./test/config/karma.conf.js --single-run",
+
+    "postinstall": "bower install",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor ./e2e-tests/protractor.conf.js",
+
+    "prestart": "npm install; npm run test-single-run;",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}
