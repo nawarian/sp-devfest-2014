@@ -5,6 +5,13 @@ apresentada no DevFest 2014 de São paulo.
 
 Tenha certeza de que você possui instalado em sua máquina o Node.js
 
+## Slides da palestra
+Os slides e o ultimo texto-rascunho utilizado na palestra
+estão localizados na pasta "Apresentação".
+Ambos foram editados utilizando o Google Drive, então
+caso não tenha o software de edição/visualização dos documentos
+você pode fazer o upload para seu Drive pessoal e visualizar a partir de lá.
+
 ## Como utilizar
 
 Baixe o repositório numa pasta qualquer:
